@@ -274,7 +274,7 @@ async function loadPlayers() {
     try {
 
         const response = await fetch(
-            "http://localhost:8080/cric/current-order"
+            "https://cricket-ranking-system-1.onrender.com/current-order"
         );
 
         const data = await response.json();
@@ -408,7 +408,7 @@ async function loadPlayers() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/cric/result",
+        "https://cricket-ranking-system-1.onrender.com/result",
         {
           method: "POST",
           headers: {
